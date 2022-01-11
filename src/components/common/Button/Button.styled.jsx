@@ -3,10 +3,10 @@ import styled from "styled-components";
 export const GlobalButton = styled.a`
 	background: ${({ primary, theme }) => (primary ? theme.colors.bdazzledBlue : "none")};
 	color: ${({ primary, theme }) => (primary ? theme.colors.cultured : theme.colors.orangeWeb)};
-	padding: 7px 14px;
+	padding: 3px 10px;
 	margin: ${({ margin }) => margin};
 	border: 1px solid ${({ primary, theme }) => (primary ? theme.colors.cultured : theme.colors.orangeWeb)};
-	border-radius: 5px;
+	border-radius: 30px;
 	font-size: 16px;
 	font-weight: 500;
 	cursor: pointer;

@@ -33,10 +33,11 @@ ul{
 
 hr{
     background: linear-gradient(to right, #36d1dc  0%,
-   #ff7b00 100%);
+   #ff7b00 50%, #36d1dc  100%);
     border: 0;
     height: 0.5px;
 }
+
 
 body{
     max-width: '1440px';

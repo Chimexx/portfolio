@@ -1,24 +1,27 @@
-export const Projects = [
+import taofoods from "../images/tao-foods.png";
+import omooba from "../images/../images/omooba-express.png";
+
+export const MyProjects = [
 	{
-		thumbnail: "../images/tao-foods.png",
+		thumbnail: taofoods,
 		title: "Tao foods",
-		type: "voluntary",
-		description:
+		type: "Voluntary",
+		details:
 			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo ratione nihil, modi illum eos accusantium autem tempore quae incidunt voluptatibus?",
-		tags: ["React", "Styled Components", "Firebase", "Mongoose", "Express JS", "Node", "Heroku"],
+		tags: ["React", "Styled Components", "Firebase", "Mongoose", "Express js", "Node js", "Heroku"],
 		live: "http://tao-foods.netlify.app",
 		liveProjectText: "Live Site",
 		code: "#",
 	},
 
 	{
-		thumbnail: "thumbnail",
+		thumbnail: omooba,
 		title: "Omooba Express",
 		type: "Paid",
-		description:
+		details:
 			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo ratione nihil, modi illum eos accusantium autem tempore quae incidunt voluptatibus?",
 		tags: ["React", "Styled Components", "Firebase", "BootStrap"],
-		liveProject: "http://omooba-express.com",
+		live: "http://omooba-express.com",
 		liveProjectText: "Live Site",
 		code: "#",
 	},

@@ -30,8 +30,8 @@ export const Section = styled.div`
 
 	@media (max-width: ${({ theme }) => theme.mobile}) {
 		margin-top: 50px;
-		height: calc(100vh-50px);
-		background-size: 180%;
+		height: calc(100vh - 50px);
+		background-size: 250%;
 	}
 `;
 export const Wrapper = styled.div`
@@ -141,10 +141,10 @@ export const ArrowDown = styled.a`
 `;
 
 export const IconBar = styled.div`
-	position: absolute;
+	position: fixed;
 	margin: auto;
 	right: 0;
-	top: 25vh;
+	top: 40vh;
 	background-color: #555;
 	width: 50px;
 
@@ -165,6 +165,13 @@ export const SocialLink = styled.a`
 		background-color: ${({ theme }) => theme.colors.oxfordBlue};
 		color: ${({ theme }) => theme.colors.orangeWeb};
 	}
+
+	@media (max-width: ${({ theme }) => theme.mobile}) {
+	}
+`;
+export const Hr = styled.hr`
+	background: ${({ theme }) => theme.colors.cultured};
+	opacity: 0.1;
 
 	@media (max-width: ${({ theme }) => theme.mobile}) {
 	}

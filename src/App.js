@@ -2,7 +2,8 @@ import { GlobalStyles } from "./components/styles/Globals.styled";
 import { ThemeProvider } from "styled-components";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
-import Projects from "./components/Projects";
+import ProjectSection from "./components/ProjectSection";
+import Contact from "./components/ContactSection";
 
 function App() {
 	const theme = {
@@ -26,7 +27,8 @@ function App() {
 				<GlobalStyles />
 				<Navbar />
 				<Hero />
-				<Projects />
+				<ProjectSection />
+				<Contact />
 			</ThemeProvider>
 		</>
 	);
