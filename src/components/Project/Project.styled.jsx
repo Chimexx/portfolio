@@ -47,7 +47,7 @@ export const Img = styled.img`
 `;
 
 export const Title = styled.h2`
-	margin-bottom: 0.7rem;
+	margin-bottom: 0.2rem;
 	color: ${({ theme }) => theme.colors.orangeWeb};
 `;
 export const Type = styled.h4`
@@ -55,7 +55,8 @@ export const Type = styled.h4`
 	margin-bottom: 0.7rem;
 
 	em {
-		font-family: "sans-serif";
+		font-weight: 100;
+		font-size: 14px;
 	}
 
 	@media screen and (max-width: ${({ theme }) => theme.mobile}) {

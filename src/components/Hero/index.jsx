@@ -49,7 +49,7 @@ const Hero = () => {
 						{NavItems.map((navItem, index) =>
 							navItem.hasSocial ? (
 								<div key={index}>
-									<SocialLink href="#" target="_blank">
+									<SocialLink href="http://facebook.com/Oluwamezie1" target="_blank">
 										<FaFacebook />
 									</SocialLink>
 									<SocialLink href="#" target="_blank">
@@ -58,7 +58,7 @@ const Hero = () => {
 									<SocialLink href="#" target="_blank">
 										<FaLinkedin />
 									</SocialLink>
-									<SocialLink href="#" target="_blank">
+									<SocialLink href="https://github.com/Chimexx" target="_blank">
 										<FaGithub />
 									</SocialLink>
 								</div>
