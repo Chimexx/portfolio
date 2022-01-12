@@ -2,11 +2,12 @@ import React from "react";
 import { FaEnvelope, FaWhatsapp } from "react-icons/fa";
 import contact from "../../images/contact.svg";
 import SectionHeading from "../common/SectionHeading";
-import { Content, ImgContainer, Section, Wrapper, Links, Link } from "./Contact.styled";
+import { Content, ImgContainer, Section, Wrapper, Links, Link, Hr } from "./Contact.styled";
 
 const Contact = () => {
 	return (
 		<Section id="contact">
+			<Hr />
 			<SectionHeading title="Contact" desc="Get in touch with me" />
 			<Wrapper>
 				<Content>
@@ -22,7 +23,7 @@ const Contact = () => {
 							</Link>
 						</div>
 						<div>
-							<FaWhatsapp className="icon" whatsapp />
+							<FaWhatsapp className="icon" whatsapp="true" />
 							<Link
 								href="https://api.whatsapp.com/send?phone=2348039690547"
 								whatsapp

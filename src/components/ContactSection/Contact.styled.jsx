@@ -27,6 +27,14 @@ export const Section = styled.section`
 		padding: 0 20px;
 	}
 `;
+
+export const Hr = styled.hr`
+	background: ${({ theme }) => theme.colors.cultured};
+
+	@media (max-width: ${({ theme }) => theme.mobile}) {
+	}
+`;
+
 export const Wrapper = styled.div`
 	display: flex;
 	margin: 3rem auto;
@@ -43,6 +51,8 @@ export const Content = styled.div`
 
 	p {
 		line-height: 30px;
+		font-size: 20px;
+		font-weight: 200;
 	}
 
 	@media screen and (max-width: ${({ theme }) => theme.mobile}) {
@@ -69,40 +79,40 @@ export const Links = styled.div`
 	display: flex;
 	align-items: center;
 	margin-top: 20px;
+	color: ${({ theme }) => theme.colors.bdazzledBlue};
+
+	&:last-child {
+		margin-right: 0px;
+	}
+
+	div {
+		display: flex;
+		align-items: center;
+		margin-right: 20px;
+
+		.icon {
+			margin-right: 5px;
+			font-size: 20px;
+			color: ${({ theme }) => theme.colors.cultured};
+		}
+	}
 
 	@media screen and (max-width: ${({ theme }) => theme.mobile}) {
 	}
 `;
 
 export const Link = styled.a`
-	display: inline-block;
-	color: ${({ theme, whatsapp }) => (whatsapp ? "#00ee77" : theme.colors.orangeWeb)};
-	align-items: center;
+	color: ${({ theme }) => theme.colors.orangeWeb};
 	margin-right: 20px;
-
-	.icon {
-		margin-right: 5px;
-		font-size: 15px;
-		color: ${({ theme, whatsapp }) => (whatsapp ? "#00ee77" : theme.colors.orangeWeb)};
-	}
-
-	div {
-		display: flex;
-		align-content: center;
-	}
-
-	&:last-child {
-		margin-right: 0px;
-	}
 
 	&::after {
 		content: "";
 		display: block;
 		height: 2px;
 		width: 0%;
-		background-color: ${({ theme, whatsapp }) => (whatsapp ? "#00ee77" : theme.colors.orangeWeb)};
+		background-color: ${({ theme, whatsapp }) =>
+			whatsapp === "true" ? "#00ee77" : theme.colors.orangeWeb};
 		transition: ease-in-out all 300ms;
-		margin-bottom: 10px;
 	}
 
 	&:hover {

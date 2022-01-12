@@ -8,7 +8,7 @@ export const MyProjects = [
 		type: "Voluntary",
 		details:
 			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo ratione nihil, modi illum eos accusantium autem tempore quae incidunt voluptatibus?",
-		tags: ["React", "Styled Components", "Firebase", "Mongoose", "Express js", "Node js", "Heroku"],
+		tags: ["React", "Styled Components", "Firebase", "Mongoose", "Express js", "Redux toolkit"],
 		live: "http://tao-foods.netlify.app",
 		liveProjectText: "Live Site",
 		code: "#",

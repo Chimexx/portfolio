@@ -60,6 +60,17 @@ export const Title = styled.h1`
 		margin-bottom: 5px;
 	}
 `;
+export const Button = styled.a`
+	font-family: "Raleway", sans-serif;
+	text-align: center;
+	font-size: 100px;
+	font-weight: 100;
+	margin-bottom: 10px;
+	color: ${({ theme }) => theme.colors.bdazzledBlue};
+
+	@media (max-width: ${({ theme }) => theme.mobile}) {
+	}
+`;
 export const Para = styled.p`
 	font-size: 24px;
 	font-weight: 100;

@@ -1,7 +1,6 @@
 import React from "react";
 import me from "../../images/me.jpg";
 import { FaArrowDown, FaFacebook, FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
-import Button from "../common/Button";
 import {
 	Section,
 	Title,
@@ -16,6 +15,7 @@ import {
 	IconBar,
 	SocialLink,
 	Hr,
+	Button,
 } from "./Hero.styled";
 import { NavItems } from "../../data/NavItems";
 
@@ -40,9 +40,6 @@ const Hero = () => {
 								Illustrator, Adobe Photoshop, HTML, CSS, Javascript, Typescript, React and
 								Node.js.
 							</Para>
-							<Btngrp>
-								<Button text="Projects" href="#projects" />
-							</Btngrp>
 						</Text>
 					</Intro>
 					<ArrowDown href="#projects">
