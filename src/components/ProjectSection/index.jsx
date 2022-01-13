@@ -7,7 +7,7 @@ import Project from "../Project";
 const ProjectSection = () => {
 	return (
 		<Section id="projects">
-			<SectionHeading title="Projects" desc="Some of my best projects" />
+			<SectionHeading title="Projects" desc="Some of my work" />
 			<div>
 				{MyProjects?.map((project, index) => {
 					return (

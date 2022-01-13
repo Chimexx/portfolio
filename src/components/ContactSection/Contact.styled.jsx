@@ -60,12 +60,16 @@ export const Content = styled.div`
 export const ImgContainer = styled.a`
 	display: flex;
 	flex: 1;
-	width: 100%;
+	width: 60%;
 
 	img {
 		margin: auto;
-		width: 80%;
+		width: 40%;
 		animation: ${float} 3s ease-in-out infinite;
+
+		@media screen and (max-width: ${({ theme }) => theme.mobile}) {
+			width: 50%;
+		}
 	}
 
 	@media screen and (max-width: ${({ theme }) => theme.mobile}) {

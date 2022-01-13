@@ -33,6 +33,17 @@ ul{
 
 body{
     max-width: '1440px';
+
+    animation: animateHeroImage 1s;
+
+    @keyframes animateHeroImage{
+        from{
+            opacity: 0;
+        }
+        to{
+            opacity: 1;
+        }
+    }
 }
 
 ::-webkit-scrollbar{
