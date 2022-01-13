@@ -14,7 +14,6 @@ to{
 `;
 
 export const Section = styled.section`
-	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
 	max-width: 985px;
@@ -23,21 +22,14 @@ export const Section = styled.section`
 
 	@media screen and (max-width: ${({ theme }) => theme.mobile}) {
 		width: 100vw;
-		min-height: 100vh;
+		min-height: 0;
 		padding: 0 20px;
-	}
-`;
-
-export const Hr = styled.hr`
-	background: ${({ theme }) => theme.colors.cultured};
-
-	@media (max-width: ${({ theme }) => theme.mobile}) {
 	}
 `;
 
 export const Wrapper = styled.div`
 	display: flex;
-	margin: 3rem auto;
+	margin-top: 3rem;
 	align-items: center;
 	justify-content: space-between;
 
@@ -46,16 +38,23 @@ export const Wrapper = styled.div`
 	}
 `;
 export const Content = styled.div`
-	text-align: justify;
 	flex: 1;
 
 	p {
 		line-height: 30px;
 		font-size: 20px;
 		font-weight: 200;
+		text-align: left;
+
+		@media screen and (max-width: ${({ theme }) => theme.mobile}) {
+			text-align: center;
+		}
 	}
 
 	@media screen and (max-width: ${({ theme }) => theme.mobile}) {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 	}
 `;
 export const ImgContainer = styled.a`
@@ -79,16 +78,15 @@ export const Links = styled.div`
 	display: flex;
 	align-items: center;
 	margin-top: 20px;
-	color: ${({ theme }) => theme.colors.bdazzledBlue};
-
-	&:last-child {
-		margin-right: 0px;
-	}
 
 	div {
 		display: flex;
 		align-items: center;
 		margin-right: 20px;
+
+		&:last-child {
+			margin-right: 0px;
+		}
 
 		.icon {
 			margin-right: 5px;
@@ -103,7 +101,6 @@ export const Links = styled.div`
 
 export const Link = styled.a`
 	color: ${({ theme }) => theme.colors.orangeWeb};
-	margin-right: 20px;
 
 	&::after {
 		content: "";

@@ -1,8 +1,17 @@
 import React, { useState } from "react";
 import { NavItems } from "../../data/NavItems";
-import { LineOne, LineTwo, Menu, Nav, List, ListItem, Navlink, SocialIcons } from "./Navbar.styled";
+import {
+	LineOne,
+	LineTwo,
+	Menu,
+	Nav,
+	List,
+	ListItem,
+	Navlink,
+	SocialIcons,
+	LogoContainer,
+} from "./Navbar.styled";
 import { FaFacebook, FaTwitter, FaLinkedin, FaGithub } from "react-icons/fa";
-import Button from "../common/Button";
 import useScrollDirection from "../../hooks/useScrollDirection";
 
 const Navbar = () => {
@@ -12,7 +21,7 @@ const Navbar = () => {
 	return (
 		<>
 			<Nav dir={scrollDirection}>
-				<div>logo</div>
+				<LogoContainer></LogoContainer>
 				<Menu onClick={() => setMenuOpen(!menuOpen)}>
 					<LineOne menuOpen={menuOpen} />
 					<LineTwo menuOpen={menuOpen} />
@@ -42,7 +51,6 @@ const Navbar = () => {
 									</Navlink>
 								</SocialIcons>
 							) : null}
-							{navItem.hasButton ? <Button link={"#"} text={"See Resume"} /> : null}
 						</ListItem>
 					))}
 				</List>

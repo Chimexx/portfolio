@@ -12,6 +12,7 @@ import {
 	Span,
 	Type,
 	Links,
+	Hr,
 } from "./Project.styled";
 
 const Project = ({ img, title, live, tags, details, liveProjectText, code, type }) => {
@@ -45,6 +46,7 @@ const Project = ({ img, title, live, tags, details, liveProjectText, code, type 
 					</Links>
 				</Description>
 			</Container>
+			<Hr />
 		</>
 	);
 };

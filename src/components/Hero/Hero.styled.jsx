@@ -19,18 +19,18 @@ const bounce = keyframes`
 export const Section = styled.div`
 	background: url(${HeroImage});
 	margin: auto;
-	margin-top: 80px;
 	height: calc(100vh - 80px);
+	margin-top: 80px;
 	background-repeat: no-repeat;
 	background-size: 100%;
 	background-position: center;
 	object-fit: cover;
 	z-index: 8;
-	position: relative;
 
 	@media (max-width: ${({ theme }) => theme.mobile}) {
 		margin-top: 50px;
-		height: calc(100vh - 50px);
+		width: 100%;
+		height: 100%;
 		background-size: 250%;
 	}
 `;
@@ -39,7 +39,6 @@ export const Wrapper = styled.div`
 	flex-direction: column;
 	width: 985px;
 	margin: 0 auto;
-	align-items: center;
 
 	@media (max-width: ${({ theme }) => theme.mobile}) {
 		width: 100%;
@@ -49,15 +48,17 @@ export const Wrapper = styled.div`
 
 export const Title = styled.h1`
 	font-family: "Raleway", sans-serif;
-	text-align: center;
+	text-align: left;
 	font-size: 100px;
 	font-weight: 100;
 	margin-bottom: 10px;
+	margin-left: 338.4px;
 	color: ${({ theme }) => theme.colors.bdazzledBlue};
 
 	@media (max-width: ${({ theme }) => theme.mobile}) {
-		font-size: 40px;
-		margin-bottom: 5px;
+		font-size: 50px;
+		margin: 20px 0;
+		text-align: center;
 	}
 `;
 export const Button = styled.a`
@@ -80,9 +81,10 @@ export const Para = styled.p`
 	color: ${({ theme }) => theme.colors.cultured};
 
 	@media (max-width: ${({ theme }) => theme.mobile}) {
-		font-size: 16px;
-		line-height: 20px;
-		text-align: justify;
+		font-size: 20px;
+		line-height: 24px;
+		font-weight: 200;
+		text-align: center;
 	}
 `;
 export const Span = styled.span`
@@ -99,29 +101,70 @@ export const Intro = styled.div`
 		flex-direction: column;
 	}
 `;
-export const Text = styled.div`
+export const Content = styled.div`
 	display: flex;
+	flex: 2;
 	flex-direction: column;
 	justify-content: center;
 	align-items: flex-start;
 	margin-left: 30px;
+	margin-bottom: 30px;
 
 	@media (max-width: ${({ theme }) => theme.mobile}) {
-		margin: 10px;
+		margin-bottom: 0px;
+		margin: 10px 0;
+
 		align-items: center;
-		margin-left: 0px;
+	}
+`;
+export const ImgContainer = styled.div`
+	flex: 1;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+	@media (max-width: ${({ theme }) => theme.mobile}) {
+		margin: 20px 0;
+	}
+`;
+export const Level1 = styled.div`
+	width: 225px;
+	height: 225px;
+	border: 2px solid ${({ theme }) => theme.colors.bdazzledBlue};
+	padding: 0px;
+	border-radius: 50%;
+	opacity: 0.4;
+	@media (max-width: ${({ theme }) => theme.mobile}) {
+		width: 175px;
+		height: 175px;
+	}
+`;
+export const Level2 = styled.div`
+	position: absolute;
+	width: 250px;
+	height: 250px;
+	border: 2px solid ${({ theme }) => theme.colors.bdazzledBlue};
+	border-radius: 50%;
+	opacity: 0.2;
+
+	@media (max-width: ${({ theme }) => theme.mobile}) {
+		width: 200px;
+		height: 200px;
 	}
 `;
 export const Img = styled.img`
-	margin: 20px;
+	position: absolute;
 	width: 200px;
-	border: 2px solid ${({ theme }) => theme.colors.cultured};
-	padding: 2px;
+	height: 200px;
+	border: 2px solid ${({ theme }) => theme.colors.bdazzledBlue};
 	border-radius: 50%;
+	padding: 5px;
 
 	@media (max-width: ${({ theme }) => theme.mobile}) {
-		margin: 10px;
-		width: 100px;
+		margin: 0px;
+		width: 150px;
+		height: 150px;
 	}
 `;
 export const Btngrp = styled.div`
@@ -133,13 +176,20 @@ export const Btngrp = styled.div`
 	}
 `;
 export const ArrowDown = styled.a`
-	margin-top: 70px;
-	bottom: 2px;
+	margin: 30px auto;
 
 	svg {
-		font-size: 30px;
+		font-size: 50px;
 		color: ${({ theme }) => theme.colors.cultured};
 		animation: ${bounce} 4s infinite;
+		padding: 10px;
+		background-color: ${({ theme }) => theme.colors.bdazzledBlue};
+		border-radius: 50%;
+
+		@media (max-width: ${({ theme }) => theme.mobile}) {
+			font-size: 40px;
+			padding: 5px;
+		}
 
 		&:hover {
 			color: ${({ theme }) => theme.colors.orangeWeb};
@@ -147,7 +197,7 @@ export const ArrowDown = styled.a`
 	}
 
 	@media (max-width: ${({ theme }) => theme.mobile}) {
-		margin-top: 20px;
+		margin-top: 10px;
 	}
 `;
 

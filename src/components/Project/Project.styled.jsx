@@ -3,30 +3,34 @@ import styled from "styled-components";
 export const Container = styled.div`
 	display: flex;
 	align-items: center;
-	margin: 20px 0px;
+	margin: 30px 0px;
 	padding: 20px 20px 0 20px;
 
 	@media screen and (max-width: ${({ theme }) => theme.mobile}) {
 		flex-direction: column;
-		margin: 20px 0 5px 0;
+		margin: 50px 0 5px 0;
 		padding: 0;
 	}
 `;
 export const ImgContainer = styled.a`
 	display: flex;
 	flex: 1;
+
 	position: relative;
 	perspective: 500px;
 	width: 100%;
 
 	@media screen and (max-width: ${({ theme }) => theme.mobile}) {
 		margin-bottom: 20px;
+		order: 2;
 	}
 `;
 
 export const Description = styled.div`
 	flex: 1;
+
 	@media screen and (max-width: ${({ theme }) => theme.mobile}) {
+		order: 1;
 	}
 `;
 
@@ -49,6 +53,9 @@ export const Img = styled.img`
 export const Title = styled.h2`
 	margin-bottom: 0.2rem;
 	color: ${({ theme }) => theme.colors.orangeWeb};
+
+	@media screen and (max-width: ${({ theme }) => theme.mobile}) {
+	}
 `;
 export const Type = styled.h4`
 	font-weight: 500;
@@ -134,5 +141,17 @@ export const Links = styled.div`
 	align-items: center;
 
 	@media screen and (max-width: ${({ theme }) => theme.mobile}) {
+		margin: 20px 0;
+	}
+`;
+
+export const Hr = styled.hr`
+	background: linear-gradient(to right, #36d1dc 0%, #ff7b00 50%, #36d1dc 100%);
+	border: 0;
+	height: 1px;
+	opacity: 0.3;
+
+	@media screen and (max-width: ${({ theme }) => theme.mobile}) {
+		height: 0.5px;
 	}
 `;

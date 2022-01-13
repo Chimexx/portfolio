@@ -51,6 +51,12 @@ export const Menu = styled.div`
 		display: inline-block;
 	}
 `;
+export const LogoContainer = styled.div`
+	@media (max-width: ${({ theme }) => theme.mobile}) {
+		max-height: 40px;
+		display: inline-block;
+	}
+`;
 export const LineOne = styled.div`
 	width: 20px;
 	height: 1px;

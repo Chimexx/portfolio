@@ -21,12 +21,14 @@ export const Wrapper = styled.div`
 		margin-bottom: 5px;
 	}
 `;
-
 export const Hr = styled.hr`
-	background: ${({ theme }) => theme.colors.cultured};
-	opacity: 0.5;
+	background: linear-gradient(to right, #36d1dc 0%, #ff7b00 50%, #36d1dc 100%);
+	border: 0;
+	height: 1px;
+	opacity: 0.2;
 
-	@media (max-width: ${({ theme }) => theme.mobile}) {
+	@media screen and (max-width: ${({ theme }) => theme.mobile}) {
+		height: 0.5px;
 	}
 `;
 

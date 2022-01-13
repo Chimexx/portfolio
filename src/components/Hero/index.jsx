@@ -8,14 +8,15 @@ import {
 	Wrapper,
 	Span,
 	Img,
-	Btngrp,
 	Intro,
-	Text,
+	Content,
 	ArrowDown,
 	IconBar,
 	SocialLink,
 	Hr,
-	Button,
+	ImgContainer,
+	Level1,
+	Level2,
 } from "./Hero.styled";
 import { NavItems } from "../../data/NavItems";
 
@@ -26,8 +27,13 @@ const Hero = () => {
 				<Wrapper>
 					<Title>MEZIE.ME</Title>
 					<Intro>
-						<Img src={me} />
-						<Text>
+						<ImgContainer>
+							<Img src={me} />
+							<Level1></Level1>
+							<Level2></Level2>
+						</ImgContainer>
+
+						<Content>
 							<Para>
 								Hi! My name is Chimezie J. Okoro, I'm a Nigeria-based
 								<Span> MERN Stack developer</Span>, but more inclined towards frontend
@@ -40,7 +46,7 @@ const Hero = () => {
 								Illustrator, Adobe Photoshop, HTML, CSS, Javascript, Typescript, React and
 								Node.js.
 							</Para>
-						</Text>
+						</Content>
 					</Intro>
 					<ArrowDown href="#projects">
 						<FaArrowDown />
@@ -49,10 +55,10 @@ const Hero = () => {
 						{NavItems.map((navItem, index) =>
 							navItem.hasSocial ? (
 								<div key={index}>
-									<SocialLink href="http://facebook.com/Oluwamezie1" target="_blank">
+									<SocialLink href="https://facebook.com/Oluwamezie1" target="_blank">
 										<FaFacebook />
 									</SocialLink>
-									<SocialLink href="#" target="_blank">
+									<SocialLink href="https://twitter.com/oluwamexie" target="_blank">
 										<FaTwitter />
 									</SocialLink>
 									<SocialLink href="#" target="_blank">
