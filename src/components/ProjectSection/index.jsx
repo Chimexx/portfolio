@@ -20,6 +20,7 @@ const ProjectSection = () => {
 							type={project.type}
 							details={project.details}
 							code={project.code}
+							private={project.privateRepo}
 							liveProjectText={project.liveProjectText}
 						/>
 					);
