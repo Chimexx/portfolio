@@ -19,7 +19,7 @@ const ProjectSection = () => {
 							tags={project.tags}
 							type={project.type}
 							details={project.details}
-							code={project.details}
+							code={project.code}
 							liveProjectText={project.liveProjectText}
 						/>
 					);

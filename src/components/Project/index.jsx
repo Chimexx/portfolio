@@ -35,11 +35,11 @@ const Project = ({ img, title, live, tags, details, liveProjectText, code, type 
 
 					<Details>{details}</Details>
 					<Links>
-						<Link href={code}>
+						<Link href={code} target="_blank">
 							<FaGithub className="icon" />
 							View Code
 						</Link>
-						<Link href={live}>
+						<Link href={live} target="_blank">
 							<FaLink className="icon" />
 							{liveProjectText}
 						</Link>
