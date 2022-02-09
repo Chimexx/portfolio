@@ -15,7 +15,7 @@ import {
 	Hr,
 } from "./Project.styled";
 
-const Project = ({ img, title, live, tags, details, liveProjectText, code, type }) => {
+const Project = ({ img, title, live, tags, details, liveProjectText, code, type, privateRepo }) => {
 	return (
 		<>
 			<Container>
@@ -35,10 +35,12 @@ const Project = ({ img, title, live, tags, details, liveProjectText, code, type 
 
 					<Details>{details}</Details>
 					<Links>
-						<Link href={code} target="_blank">
-							<FaGithub className="icon" />
-							View Code
-						</Link>
+						{!privateRepo && (
+							<Link href={code} target="_blank">
+								<FaGithub className="icon" />
+								View Code
+							</Link>
+						)}
 						<Link href={live} target="_blank">
 							<FaLink className="icon" />
 							{liveProjectText}

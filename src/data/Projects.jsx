@@ -21,6 +21,7 @@ export const MyProjects = [
 		live: "http://tao-foods.netlify.app",
 		liveProjectText: "Live Site",
 		code: "https://github.com/Chimexx/tao-foods-client",
+		privateRepo: false,
 	},
 
 	{
@@ -33,6 +34,7 @@ export const MyProjects = [
 		live: "http://omooba-express.com",
 		liveProjectText: "Live Site",
 		code: "https://github.com/Chimexx/omooba-express",
+		privateRepo: true,
 	},
 	{
 		thumbnail: webflycks,
@@ -44,5 +46,6 @@ export const MyProjects = [
 		live: "http://webflycks.netlify.app",
 		liveProjectText: "Live Site",
 		code: "https://github.com/Chimexx/webflycks-movie-app",
+		privateRepo: false,
 	},
 ];
