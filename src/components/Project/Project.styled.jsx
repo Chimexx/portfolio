@@ -87,6 +87,11 @@ export const Details = styled.p`
 	@media screen and (max-width: ${({ theme }) => theme.mobile}) {
 	}
 `;
+export const PrivateRepo = styled.p`
+	margin-right: 10px;
+	@media screen and (max-width: ${({ theme }) => theme.mobile}) {
+	}
+`;
 
 export const Link = styled.a`
 	color: ${({ theme }) => theme.colors.orangeWeb};

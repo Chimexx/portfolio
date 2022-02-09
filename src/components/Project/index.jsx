@@ -13,6 +13,7 @@ import {
 	Type,
 	Links,
 	Hr,
+	PrivateRepo,
 } from "./Project.styled";
 
 const Project = ({ img, title, live, tags, details, liveProjectText, code, type, privateRepo }) => {
@@ -35,7 +36,9 @@ const Project = ({ img, title, live, tags, details, liveProjectText, code, type,
 
 					<Details>{details}</Details>
 					<Links>
-						{!privateRepo && (
+						{privateRepo ? (
+							<PrivateRepo>Private Repo </PrivateRepo>
+						) : (
 							<Link href={code} target="_blank">
 								<FaGithub className="icon" />
 								View Code
